@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
+        <PackageReference Include="Ookii.Dialogs.Wpf" Version="5.0.1" />
+        <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Models\" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\LDAppUpdateTool_Publish.Core\LDAppUpdateTool_Publish.Core.csproj" />
+      <ProjectReference Include="..\..\LDAppUpdateTool_Publish.Share\LDAppUpdateTool_Publish.Share.csproj" />
+      <ProjectReference Include="..\..\Services\LDAppUpdateTool_Publish.Services.InterFaces\LDAppUpdateTool_Publish.Services.InterFaces.csproj" />
+      <ProjectReference Include="..\..\Services\LDAppUpdateTool_Publish.Services\LDAppUpdateTool_Publish.Services.csproj" />
+    </ItemGroup>
+</Project>

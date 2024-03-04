@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <UseWPF>true</UseWPF>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
+        <PackageReference Include="Prism.DryIoc" Version="8.1.97" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\LDAppUpdateTool_Publish.Core\LDAppUpdateTool_Publish.Core.csproj" />
+        <ProjectReference Include="..\LDAppUpdateTool_Publish.Share\LDAppUpdateTool_Publish.Share.csproj" />
+        <ProjectReference Include="..\Modules\LDAppUpdateTool_Publish.Modules.IndexView\LDAppUpdateTool_Publish.Modules.IndexView.csproj" />
+        <ProjectReference Include="..\Modules\LDAppUpdateTool_Publish.Modules.Log\LDAppUpdateTool_Publish.Modules.Log.csproj" />
+        <ProjectReference Include="..\Modules\LDAppUpdateTool_Publish.Modules.ModuleName\LDAppUpdateTool_Publish.Modules.ModuleName.csproj" />
+        <ProjectReference Include="..\Services\LDAppUpdateTool_Publish.Services.Interfaces\LDAppUpdateTool_Publish.Services.Interfaces.csproj" />
+        <ProjectReference Include="..\Services\LDAppUpdateTool_Publish.Services\LDAppUpdateTool_Publish.Services.csproj" />
+    </ItemGroup>
+</Project>
